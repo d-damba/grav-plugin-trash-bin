@@ -1,0 +1,42 @@
+name: Trash Bin
+slug: trash-bin
+type: plugin
+version: 0.2.5
+description: Deleted pages go to a trash you can restore them from, children and media included.
+icon: trash
+author:
+  name: d-damba
+  url: https://github.com/d-damba
+homepage: https://github.com/d-damba/grav-plugin-trash-bin
+bugs: https://github.com/d-damba/grav-plugin-trash-bin/issues
+docs: https://github.com/d-damba/grav-plugin-trash-bin/blob/main/README.md
+keywords: trash, recycle bin, restore, undelete, admin
+license: MIT
+compatibility:
+  grav: ['2.0']
+dependencies:
+  - { name: grav, version: '>=2.0.0' }
+  - { name: api, version: '>=1.0.57' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_TRASH_BIN.PLUGIN_STATUS
+      highlight: 1
+      default: true
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    retention_days:
+      type: number
+      label: PLUGIN_TRASH_BIN.RETENTION_DAYS
+      help: PLUGIN_TRASH_BIN.RETENTION_DAYS_HELP
+      default: 30
+      validate:
+        type: int
+        min: 0

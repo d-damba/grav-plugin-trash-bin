@@ -1,0 +1,5 @@
+enabled: true
+
+# Days an item stays in the trash before it is removed for good. 0 keeps
+# everything until you empty the trash yourself.
+retention_days: 30

@@ -1,0 +1,11 @@
+# ACL definitions, read by the API plugin's PermissionsReader and surfaced in
+# the Admin Next user and group editors. Restoring also needs api.pages.write.
+actions:
+  api.trash:
+    type: access
+    label: PLUGIN_TRASH_BIN.PERMISSION
+    actions:
+      read:
+        label: PLUGIN_TRASH_BIN.PERMISSION_READ
+      write:
+        label: PLUGIN_TRASH_BIN.PERMISSION_WRITE
