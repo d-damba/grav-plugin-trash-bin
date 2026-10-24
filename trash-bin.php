@@ -48,7 +48,7 @@ class TrashBinPlugin extends Plugin
      */
     public function onRegisterPermissions(PermissionsRegisterEvent $event): void
     {
-        $event->permissions->addActions(PermissionsReader::fromYaml("plugin://{$this->name}/permissions.yaml"));
+        $event->permissions->addActions(PermissionsReader::fromYaml("plugin://{$this->name}/config/permissions.yaml"));
     }
 
     /**

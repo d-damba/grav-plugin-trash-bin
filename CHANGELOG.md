@@ -1,3 +1,9 @@
+# v0.2.6
+## 10/23/2026
+
+1. [](#bugfix)
+    * Installs cleanly with Admin 2's Direct Install. `permissions.yaml` moved to `config/`: at the top level, Grav took its name for the plugin's and installed it as `user/plugins/permissions`.
+
 # v0.2.5
 ## 10/23/2026
 
